@@ -1,7 +1,7 @@
 # <div align="center">🔍 Reddit TopSort</div>
 
 <div align="center">
-  <img src="/external/redditpost.png" alt="Reddit TopSort Visualization" width="600"/>
+  <img src="/data/external/redditpost.png" alt="Reddit TopSort Visualization" width="600"/>
   <p><i>Análise e visualização avançada de dados do Reddit para identificar padrões de engajamento entre comunidades</i></p>
 </div>
 
