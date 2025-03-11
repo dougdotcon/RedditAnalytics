@@ -1,7 +1,7 @@
-# <div align="center">🔍 Reddit TopSort</div>
+# <div align="center">RedditAnalytics</div>
 
 <div align="center">
-  <img src="/data/external/redditpost.png" alt="Reddit TopSort Visualization" width="600"/>
+  <img src="/data/external/redditpost.png" alt="RedditAnalytics" width="600"/>
   <p><i>Análise e visualização avançada de dados do Reddit para identificar padrões de engajamento entre comunidades</i></p>
 </div>
 
@@ -21,13 +21,13 @@
 
 ## 📖 Sobre
 
-O Reddit TopSort é uma ferramenta de análise de dados que processa comentários do Reddit para identificar padrões de engajamento, mapear interseções entre comunidades e visualizar a distribuição de usuários ativos entre diferentes subreddits.
+O RedditAnalytics é uma ferramenta de análise de dados que processa comentários do Reddit para identificar padrões de engajamento, mapear interseções entre comunidades e visualizar a distribuição de usuários ativos entre diferentes subreddits.
 
 ---
 
 ## 🌟 Aplicabilidades
 
-O Reddit TopSort pode ser utilizado em diversos contextos:
+O RedditAnalytics pode ser utilizado em diversos contextos:
 
 ### 📊 Pesquisa de Mercado
 - **Análise de Audiência**: Identifique onde seu público-alvo está mais ativo
@@ -143,7 +143,7 @@ python orchestrator.py -i
 
 ## 📊 Visualizações
 
-O Reddit TopSort gera visualizações interativas de alta qualidade:
+O RedditAnalytics gera visualizações interativas de alta qualidade:
 
 - **Gráficos de Barras**: Ranking de subreddits por comentaristas únicos
 - **Heatmaps**: Matrizes de adjacência mostrando sobreposição entre comunidades
@@ -151,7 +151,7 @@ O Reddit TopSort gera visualizações interativas de alta qualidade:
 - **Gráficos de Rede**: Mapeamento de conexões entre comunidades relacionadas
 
 <div align="center">
-  <p><i>Exemplo de visualização gerada pelo Reddit TopSort</i></p>
+  <p><i>Exemplo de visualização gerada pelo RedditAnalytics</i></p>
 </div>
 
 ---

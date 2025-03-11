@@ -11,7 +11,10 @@ from src.analysis import top_subs as t, metrics as a
 from src.visualization import graphs as g, update_images as img
 
 parser = argparse.ArgumentParser(
-    description='This is the orchestrator for Reddit_TopSort most of the other .py scripts can be run from here with a simple flag',
+    description='RedditAnalytics: Uma ferramenta avançada para análise e visualização de dados do Reddit. '
+                'Analisa interações entre subreddits, gera gráficos de relacionamento, '
+                'e identifica as comunidades mais influentes baseado em dados de comentários. '
+                'Ideal para pesquisadores, moderadores e analistas de mídia social.',
 )
 parser.add_argument('File',
                     metavar='file',

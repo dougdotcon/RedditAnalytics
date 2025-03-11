@@ -1,6 +1,6 @@
-# Reddit TopSort - Extensão Chrome & SaaS
+# RedditAnalytics - Extensão Chrome & SaaS
 
-Este documento descreve a transformação do Reddit TopSort em um serviço SaaS (Software as a Service) com uma extensão Chrome integrada.
+Este documento descreve a transformação do RedditAnalytics em um serviço SaaS (Software as a Service) com uma extensão Chrome integrada.
 
 ## 🎯 Visão Geral do Produto
 
