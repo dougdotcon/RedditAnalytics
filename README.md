@@ -21,75 +21,65 @@
 
 ## 📖 Sobre
 
-O RedditAnalytics é uma ferramenta de análise de dados que processa comentários do Reddit para identificar padrões de engajamento, mapear interseções entre comunidades e visualizar a distribuição de usuários ativos entre diferentes subreddits.
+O **RedditAnalytics** é uma ferramenta avançada para análise e visualização de dados do Reddit. Ela processa grandes volumes de comentários para identificar padrões de engajamento, mapear conexões entre comunidades e gerar gráficos interativos, facilitando insights para pesquisadores, analistas e profissionais de marketing.
 
 ---
 
 ## 🌟 Aplicabilidades
 
-O RedditAnalytics pode ser utilizado em diversos contextos:
-
 ### 📊 Pesquisa de Mercado
-- **Análise de Audiência**: Identifique onde seu público-alvo está mais ativo
-- **Tendências de Nicho**: Descubra conexões entre diferentes interesses e comunidades
-- **Validação de Produto**: Encontre comunidades para testar ideias e obter feedback
+- **Análise de Audiência:** Descubra onde seu público está mais ativo.
+- **Tendências de Nicho:** Encontre conexões entre interesses.
+- **Validação de Produto:** Identifique comunidades para testar ideias.
 
 ### 🔬 Pesquisa Acadêmica
-- **Estudos Sociológicos**: Analise padrões de comportamento online
-- **Pesquisa de Redes Sociais**: Mapeie como comunidades se conectam e interagem
-- **Análise de Discurso**: Identifique tópicos e termos comuns entre diferentes grupos
+- **Estudos Sociológicos:** Analise comportamentos online.
+- **Redes Sociais:** Mapeie conexões entre comunidades.
+- **Análise de Discurso:** Explore tópicos comuns entre grupos.
 
 ### 💼 Marketing e Estratégia
-- **Direcionamento de Conteúdo**: Otimize sua estratégia para comunidades específicas
-- **Identificação de Influenciadores**: Encontre usuários ativos em múltiplas comunidades
-- **Análise Competitiva**: Compare engajamento entre nichos relacionados
+- **Direcionamento de Conteúdo:** Otimize sua comunicação.
+- **Influenciadores:** Encontre usuários ativos em múltiplas comunidades.
+- **Análise Competitiva:** Compare engajamento entre nichos.
 
 ### 🧠 Ciência de Dados
-- **Visualização de Dados Complexos**: Transforme dados brutos em insights visuais
-- **Treinamento de Modelos**: Gere datasets para análise de sentimento e classificação
-- **Detecção de Padrões**: Identifique anomalias e tendências emergentes
+- **Visualização:** Transforme dados brutos em gráficos claros.
+- **Modelagem:** Gere datasets para análise de sentimentos.
+- **Detecção de Padrões:** Identifique tendências emergentes.
 
 ---
 
 ## 💎 Benefícios
 
-### Para Empresas e Marcas
-- **Decisões Baseadas em Dados**: Fundamente estratégias em comportamentos reais
-- **Otimização de ROI**: Direcione recursos para comunidades com maior potencial
-- **Insights Competitivos**: Entenda onde concorrentes têm maior presença
-
-### Para Pesquisadores
-- **Dados Estruturados**: Acesso a informações organizadas e processadas
-- **Visualizações Prontas**: Gráficos e representações visuais de alta qualidade
-- **Análise Escalável**: Processamento eficiente de grandes volumes de dados
-
-### Para Criadores de Conteúdo
-- **Descoberta de Nichos**: Encontre comunidades receptivas ao seu conteúdo
-- **Estratégia de Crescimento**: Identifique padrões de migração entre subreddits
-- **Otimização de Engajamento**: Entenda quais tópicos geram mais interação
+- **Automação Completa:** Da coleta à visualização.
+- **Alta Escalabilidade:** Processa milhões de comentários.
+- **Visualizações Ricas:** Gráficos com ícones oficiais dos subreddits.
+- **Modularidade:** Componentes reutilizáveis e personalizáveis.
+- **Código Aberto:** Fácil de adaptar e expandir.
 
 ---
 
 ## 🚀 Funcionalidades
 
-- **Análise de Comentários**: Processamento de arquivos de comentários do Reddit
-- **Identificação de Usuários**: Mapeamento de usuários únicos por subreddit
-- **Visualização Avançada**: Geração de gráficos interativos com Plotly
-- **Processamento de Ícones**: Integração visual com ícones oficiais dos subreddits
-- **Análise de Adjacência**: Mapeamento de conexões entre comunidades
-- **Exportação de Dados**: Salvamento de resultados em formatos utilizáveis
+- **Scraping de Subreddits:** Atualiza listas de comunidades populares.
+- **Processamento de Comentários:** Organiza dados por subreddit.
+- **Mesclagem de Dados:** Consolida múltiplos arquivos.
+- **Análise Quantitativa:** Calcula métricas e matrizes de sobreposição.
+- **Visualização Gráfica:** Gera gráficos interativos e redes.
+- **Download de Ícones:** Baixa e integra ícones oficiais.
+- **Exportação:** Salva resultados em formatos utilizáveis.
 
 ---
 
 ## 📋 Pré-requisitos
 
 - Python 3.x
-- Bibliotecas Python:
-  - lxml
-  - requests
-  - plotly
-  - pandas
-  - Pillow (PIL)
+- Dependências listadas em `requirements.txt`
+
+Instale com:
+```bash
+pip install -r requirements.txt
+```
 
 ---
 
@@ -97,62 +87,64 @@ O RedditAnalytics pode ser utilizado em diversos contextos:
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/Reddit_TopSort.git
-cd Reddit_TopSort
+git clone https://github.com/dougdotcon/RedditAnalytics.git
+cd RedditAnalytics
 ```
 
 2. Instale as dependências:
 ```bash
-pip install lxml requests plotly pandas Pillow
+pip install -r requirements.txt
 ```
 
 ---
 
 ## 💻 Uso
 
-O projeto utiliza um orquestrador principal (`orchestrator.py`) que coordena todas as operações:
+O script principal é `reddit_analytics.py`. Ele aceita múltiplas opções combináveis:
 
 ```bash
-# Atualizar lista de subreddits
-python orchestrator.py -u
+# Atualizar lista de subreddits populares
+python reddit_analytics.py -u
 
-# Processar arquivo de comentários
-python orchestrator.py arquivo_comentarios.json
+# Processar arquivo de comentários compactado (.zst)
+python reddit_analytics.py caminho/para/arquivo.zst
 
-# Mesclar arquivos de saída
-python orchestrator.py -m
+# Mesclar arquivos processados
+python reddit_analytics.py -m
 
-# Analisar top subreddits (N é opcional, define o número de subreddits)
-python orchestrator.py -t [N]
+# Deletar arquivos já processados
+python reddit_analytics.py -d
 
-# Gerar gráficos
-python orchestrator.py -g
+# Baixar ícones dos subreddits
+python reddit_analytics.py -i
 
-# Atualizar ícones dos subreddits
-python orchestrator.py -i
+# Analisar sobreposição entre comunidades (opcional: limite N)
+python reddit_analytics.py -a N
+
+# Identificar subreddits mais influentes (opcional: limite N)
+python reddit_analytics.py -t N
+
+# Gerar grafo da rede de subreddits
+python reddit_analytics.py -g
 ```
 
-### Fluxo de Trabalho Recomendado
+### Fluxo de trabalho recomendado:
 
 1. Atualize a lista de subreddits (`-u`)
 2. Processe os arquivos de comentários
 3. Mescle os resultados (`-m`)
-4. Gere visualizações (`-g` ou `-t`)
+4. Baixe os ícones (`-i`)
+5. Realize análises (`-a` ou `-t`)
+6. Gere visualizações (`-g`)
 
 ---
 
 ## 📊 Visualizações
 
-O RedditAnalytics gera visualizações interativas de alta qualidade:
-
-- **Gráficos de Barras**: Ranking de subreddits por comentaristas únicos
-- **Heatmaps**: Matrizes de adjacência mostrando sobreposição entre comunidades
-- **Visualizações Enriquecidas**: Integração com ícones oficiais dos subreddits
-- **Gráficos de Rede**: Mapeamento de conexões entre comunidades relacionadas
-
-<div align="center">
-  <p><i>Exemplo de visualização gerada pelo RedditAnalytics</i></p>
-</div>
+- **Gráficos de Barras:** Ranking de subreddits por comentaristas únicos.
+- **Heatmaps:** Sobreposição entre comunidades.
+- **Grafos:** Rede de conexões entre subreddits.
+- **Ícones Integrados:** Visualizações enriquecidas com logos oficiais.
 
 ---
 
@@ -160,113 +152,27 @@ O RedditAnalytics gera visualizações interativas de alta qualidade:
 
 ```
 Reddit_TopSort/
-├── src/                    # Código fonte principal
-│   ├── analysis/          # Módulos de análise
-│   │   ├── __init__.py
-│   │   ├── top_subs.py    # Análise de subreddits mais ativos
-│   │   └── metrics.py     # Cálculos de métricas e estatísticas
-│   │
-│   ├── data/              # Processamento de dados
-│   │   ├── __init__.py
-│   │   ├── parser.py      # Processamento de arquivos
-│   │   └── cleaner.py     # Limpeza e normalização de dados
-│   │
-│   ├── visualization/     # Geração de visualizações
-│   │   ├── __init__.py
-│   │   ├── graphs.py      # Geração de gráficos
-│   │   └── image_tools.py # Manipulação de imagens
-│   │
-│   └── utils/            # Utilitários gerais
-│       ├── __init__.py
-│       └── tools.py      # Funções auxiliares
-│
-├── tests/                # Testes unitários e de integração
-│   ├── __init__.py
-│   ├── test_analysis/
-│   ├── test_data/
-│   └── test_visualization/
-│
-├── data/                 # Dados e arquivos de entrada
-│   ├── raw/             # Dados brutos
-│   ├── processed/       # Dados processados
-│   └── external/        # Dados externos (ex: ícones)
-│
-├── output/              # Resultados e visualizações
-│   ├── graphs/         # Gráficos gerados
-│   ├── reports/        # Relatórios e análises
-│   └── exports/        # Dados exportados
-│
-├── docs/                # Documentação
-│   ├── api/            # Documentação da API
-│   ├── guides/         # Guias de uso
-│   └── examples/       # Exemplos de uso
-│
-├── scripts/            # Scripts de automação e utilitários
-│   ├── setup.py       # Script de configuração
-│   └── update.py      # Script de atualização
-│
-├── requirements/       # Requisitos do projeto
-│   ├── base.txt       # Dependências básicas
-│   ├── dev.txt        # Dependências de desenvolvimento
-│   └── test.txt       # Dependências de teste
-│
-├── .github/           # Configurações do GitHub
-│   ├── workflows/     # GitHub Actions
-│   └── ISSUE_TEMPLATE/
-│
-├── .gitignore         # Arquivos ignorados pelo git
-├── README.md          # Documentação principal
-├── LICENSE           # Licença do projeto
-├── setup.py          # Configuração do pacote
-├── requirements.txt   # Atalho para requirements/base.txt
-└── orchestrator.py    # Script principal de execução
+├── reddit_analytics.py     # Script principal CLI
+├── src/
+│   ├── analysis/           # Análises e métricas
+│   ├── data/               # Processamento e scraping
+│   ├── visualization/      # Visualizações e gráficos
+│   └── utils/              # Funções auxiliares
+├── data/                   # Dados brutos e processados
+├── output/                 # Resultados e gráficos gerados
+├── docs/                   # Documentação adicional
+├── scripts/                # Scripts utilitários
+├── requirements/           # Dependências organizadas
+├── requirements.txt        # Dependências principais
+├── README.md               # Este arquivo
+├── LICENSE                 # Licença
 ```
-
-### 📦 Organização dos Módulos
-
-#### 1. `src/` - Código Fonte
-- **analysis/**: Módulos de análise de dados
-- **data/**: Processamento e manipulação de dados
-- **visualization/**: Geração de gráficos e visualizações
-- **utils/**: Funções utilitárias compartilhadas
-
-#### 2. `tests/` - Testes
-- Estrutura espelhada do código fonte
-- Testes unitários e de integração
-- Fixtures e mocks
-
-#### 3. `data/` - Dados
-- **raw/**: Dados brutos do Reddit
-- **processed/**: Dados após processamento
-- **external/**: Recursos externos
-
-#### 4. `output/` - Resultados
-- **graphs/**: Visualizações geradas
-- **reports/**: Relatórios analíticos
-- **exports/**: Dados exportados
-
-#### 5. `docs/` - Documentação
-- **api/**: Documentação técnica
-- **guides/**: Guias do usuário
-- **examples/**: Exemplos práticos
-
-### 🔧 Scripts e Configurações
-
-- **requirements/**: Gerenciamento modular de dependências
-- **scripts/**: Automação e utilitários
-- **.github/**: Configurações de CI/CD e templates
-
-### 📝 Arquivos Principais
-
-- **orchestrator.py**: Ponto de entrada principal
-- **setup.py**: Configuração do pacote Python
-- **requirements.txt**: Dependências do projeto
 
 ---
 
 ## 📝 Licença
 
-Este projeto está sob a licença incluída no arquivo LICENSE.
+Este projeto está sob a licença incluída no arquivo `LICENSE`.
 
 ---
 
