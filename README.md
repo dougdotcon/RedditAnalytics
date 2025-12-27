@@ -1,181 +1,133 @@
-# <div align="center">RedditAnalytics</div>
+# Reddit Analytics
 
 <div align="center">
-  <img src="/data/external/redditpost.png" alt="RedditAnalytics" width="600"/>
-  <p><i>Análise e visualização avançada de dados do Reddit para identificar padrões de engajamento entre comunidades</i></p>
+  <img src="/data/external/redditpost.png" alt="Reddit Analytics" width="600"/>
+  <p><i>Advanced data analysis and visualization tool to identify engagement patterns across Reddit communities.</i></p>
 </div>
 
 <p align="center">
-  <a href="#-sobre">Sobre</a> •
-  <a href="#-aplicabilidades">Aplicabilidades</a> •
-  <a href="#-benefícios">Benefícios</a> •
-  <a href="#-funcionalidades">Funcionalidades</a> •
-  <a href="#-instalação">Instalação</a> •
-  <a href="#-uso">Uso</a> •
-  <a href="#-visualizações">Visualizações</a> •
-  <a href="#-estrutura">Estrutura</a> •
-  <a href="#-licença">Licença</a>
+  <a href="#-about">About</a> •
+  <a href="#-use-cases">Use Cases</a> •
+  <a href="#-benefits">Benefits</a> •
+  <a href="#-features">Features</a> •
+  <a href="#-installation">Installation</a> •
+  <a href="#-usage">Usage</a> •
+  <a href="#-project-structure">Structure</a> •
+  <a href="#-license">License</a>
 </p>
 
 ---
 
-## 📖 Sobre
+## 📖 About
 
-O **RedditAnalytics** é uma ferramenta avançada para análise e visualização de dados do Reddit. Ela processa grandes volumes de comentários para identificar padrões de engajamento, mapear conexões entre comunidades e gerar gráficos interativos, facilitando insights para pesquisadores, analistas e profissionais de marketing.
-
----
-
-## 🌟 Aplicabilidades
-
-### 📊 Pesquisa de Mercado
-- **Análise de Audiência:** Descubra onde seu público está mais ativo.
-- **Tendências de Nicho:** Encontre conexões entre interesses.
-- **Validação de Produto:** Identifique comunidades para testar ideias.
-
-### 🔬 Pesquisa Acadêmica
-- **Estudos Sociológicos:** Analise comportamentos online.
-- **Redes Sociais:** Mapeie conexões entre comunidades.
-- **Análise de Discurso:** Explore tópicos comuns entre grupos.
-
-### 💼 Marketing e Estratégia
-- **Direcionamento de Conteúdo:** Otimize sua comunicação.
-- **Influenciadores:** Encontre usuários ativos em múltiplas comunidades.
-- **Análise Competitiva:** Compare engajamento entre nichos.
-
-### 🧠 Ciência de Dados
-- **Visualização:** Transforme dados brutos em gráficos claros.
-- **Modelagem:** Gere datasets para análise de sentimentos.
-- **Detecção de Padrões:** Identifique tendências emergentes.
+**Reddit Analytics** is a powerful tool designed for the in-depth analysis and visualization of Reddit data. It processes vast volumes of comments to identify engagement patterns, map connections between communities, and generate interactive graphs. This tool provides actionable insights for researchers, market analysts, and professionals seeking to understand the Reddit landscape.
 
 ---
 
-## 💎 Benefícios
+## 🌟 Use Cases
 
-- **Automação Completa:** Da coleta à visualização.
-- **Alta Escalabilidade:** Processa milhões de comentários.
-- **Visualizações Ricas:** Gráficos com ícones oficiais dos subreddits.
-- **Modularidade:** Componentes reutilizáveis e personalizáveis.
-- **Código Aberto:** Fácil de adaptar e expandir.
+### 📊 Market Research
+- **Audience Analysis:** Discover where your target audience is most active.
+- **Niche Trends:** Identify emerging interests and community overlaps.
+- **Product Validation:** Find ideal communities for testing and feedback.
 
----
+### 🔬 Academic Research
+- **Sociological Studies:** Analyze online behavior and group dynamics.
+- **Network Analysis:** Map connections and information flow between communities.
+- **Discourse Analysis:** Explore common topics and linguistic patterns across groups.
 
-## 🚀 Funcionalidades
+### 💼 Marketing & Strategy
+- **Content Targeting:** Optimize communication strategies for specific audiences.
+- **Influencer Discovery:** Find users active across multiple relevant communities.
+- **Competitive Analysis:** Benchmark engagement against competitors or adjacent niches.
 
-- **Scraping de Subreddits:** Atualiza listas de comunidades populares.
-- **Processamento de Comentários:** Organiza dados por subreddit.
-- **Mesclagem de Dados:** Consolida múltiplos arquivos.
-- **Análise Quantitativa:** Calcula métricas e matrizes de sobreposição.
-- **Visualização Gráfica:** Gera gráficos interativos e redes.
-- **Download de Ícones:** Baixa e integra ícones oficiais.
-- **Exportação:** Salva resultados em formatos utilizáveis.
-
----
-
-## 📋 Pré-requisitos
-
-- Python 3.x
-- Dependências listadas em `requirements.txt`
-
-Instale com:
-```bash
-pip install -r requirements.txt
-```
+### 🧠 Data Science
+- **Data Visualization:** Transform raw data into clear, insightful graphics.
+- **Modeling:** Generate structured datasets for sentiment analysis and ML models.
+- **Pattern Detection:** Identify emerging trends and anomalies in large datasets.
 
 ---
 
-## 🛠️ Instalação
+## 💎 Benefits
 
-1. Clone o repositório:
-```bash
-git clone https://github.com/dougdotcon/RedditAnalytics.git
-cd RedditAnalytics
-```
-
-2. Instale as dependências:
-```bash
-pip install -r requirements.txt
-```
+- **End-to-End Automation:** From data collection to final visualization.
+- **High Scalability:** Efficiently processes millions of comments.
+- **Rich Visualizations:** Generates interactive charts and network graphs with official subreddit icons.
+- **Modular Architecture:** Components are reusable and easily customizable.
+- **Open Source:** Free to use, modify, and extend.
 
 ---
 
-## 💻 Uso
+## 🚀 Features
 
-O script principal é `reddit_analytics.py`. Ele aceita múltiplas opções combináveis:
-
-```bash
-# Atualizar lista de subreddits populares
-python reddit_analytics.py -u
-
-# Processar arquivo de comentários compactado (.zst)
-python reddit_analytics.py caminho/para/arquivo.zst
-
-# Mesclar arquivos processados
-python reddit_analytics.py -m
-
-# Deletar arquivos já processados
-python reddit_analytics.py -d
-
-# Baixar ícones dos subreddits
-python reddit_analytics.py -i
-
-# Analisar sobreposição entre comunidades (opcional: limite N)
-python reddit_analytics.py -a N
-
-# Identificar subreddits mais influentes (opcional: limite N)
-python reddit_analytics.py -t N
-
-# Gerar grafo da rede de subreddits
-python reddit_analytics.py -g
-```
-
-### Fluxo de trabalho recomendado:
-
-1. Atualize a lista de subreddits (`-u`)
-2. Processe os arquivos de comentários
-3. Mescle os resultados (`-m`)
-4. Baixe os ícones (`-i`)
-5. Realize análises (`-a` ou `-t`)
-6. Gere visualizações (`-g`)
+- **Subreddit Scraping:** Updates lists of popular and trending communities.
+- **Comment Processing:** Efficiently parses and organizes comment data by subreddit.
+- **Data Merging:** Consolidates multiple data files into a unified dataset.
+- **Quantitative Analysis:** Calculates key metrics and community overlap matrices.
+- **Graphical Visualization:** Generates interactive network graphs and charts.
+- **Icon Downloader:** Automatically fetches and integrates official subreddit icons.
+- **Data Export:** Saves results in standard formats (CSV, JSON, PNG, HTML).
 
 ---
 
-## 📊 Visualizações
+## 📋 Prerequisites
 
-- **Gráficos de Barras:** Ranking de subreddits por comentaristas únicos.
-- **Heatmaps:** Sobreposição entre comunidades.
-- **Grafos:** Rede de conexões entre subreddits.
-- **Ícones Integrados:** Visualizações enriquecidas com logos oficiais.
+- Python 3.9+
+- pip package manager
 
 ---
 
-## 📁 Estrutura do Projeto
+## 🛠️ Installation
 
-```
-Reddit_TopSort/
-├── reddit_analytics.py     # Script principal CLI
-├── src/
-│   ├── analysis/           # Análises e métricas
-│   ├── data/               # Processamento e scraping
-│   ├── visualization/      # Visualizações e gráficos
-│   └── utils/              # Funções auxiliares
-├── data/                   # Dados brutos e processados
-├── output/                 # Resultados e gráficos gerados
-├── docs/                   # Documentação adicional
-├── scripts/                # Scripts utilitários
-├── requirements/           # Dependências organizadas
-├── requirements.txt        # Dependências principais
-├── README.md               # Este arquivo
-├── LICENSE                 # Licença
-```
+1. **Clone the repository:**
+   bash
+   git clone https://github.com/dougdotcon/reddit_analytics.git
+   cd reddit_analytics
+   
 
----
+2. **Create a virtual environment (Recommended):**
+   bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   
 
-## 📝 Licença
-
-Este projeto está sob a licença incluída no arquivo `LICENSE`.
+3. **Install dependencies:**
+   bash
+   pip install -r requirements.txt
+   
 
 ---
 
-## 🔗 Referências
+## 📝 Usage
 
-Inspirado por: [r/dataisbeautiful - Subreddits with the most unique commenters](https://www.reddit.com/r/dataisbeautiful/comments/i2ocob/oc_subreddits_with_the_most_unique_commenters/)
+*For detailed usage instructions and examples, please refer to the project's documentation or specific module docstrings.*
+
+---
+
+## 🗂️ Project Structure
+
+plaintext
+reddit_analytics/
+├── data/                   # Data storage (raw, processed, external)
+├── notebooks/              # Jupyter notebooks for exploration and analysis
+├── src/                    # Source code for the main application
+│   ├── __init__.py
+│   ├── scraper.py          # Module for scraping Reddit data
+│   ├── processor.py        # Module for data cleaning and processing
+│   ├── analyzer.py         # Module for quantitative analysis
+│   └── visualizer.py       # Module for generating graphs and charts
+├── requirements.txt        # Python dependencies
+└── README.md               # Project documentation
+
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+<div align="center">
+  <p>Made with ❤️ for the data community.</p>
+</div>
